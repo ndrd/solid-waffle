@@ -6,13 +6,13 @@ nginx:
     ports:
         - "80:80"
 node1:
-    image: ndrd/centos-node
+    image: ndrd/streamer
     links:
         - redis
     ports:
         - "8080"
 node2:
-    image: ndrd/centos-node
+    image: ndrd/streamer
     links:
         - redis
     ports:
